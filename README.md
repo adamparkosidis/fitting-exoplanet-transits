@@ -24,6 +24,6 @@ The two text files associated with this project contain time-series data for two
 
 Eclipse Fits
 
-![First (exo)planet](/images/period1.png)
+![First (exo)planet](/images/period_1.png)
 
-![Second (exo)planet](/images/period2.png)
+![Second (exo)planet](/images/period_2.png)
