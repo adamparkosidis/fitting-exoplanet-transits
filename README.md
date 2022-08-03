@@ -21,3 +21,9 @@ The two text files associated with this project contain time-series data for two
     Where `Δt_{total}` is the total duration of the eclipse (from start to finish), `Δt_{in}`  is the ingress time, i.e. the time from the start of the       eclipse until the maximum depth (`d`) of the eclipse is reached, `t_{cent}` is the time corresponding to the mid-point of the eclipse and `f_{star}`     is the flux level of the star when not eclipsed. You assume that the eclipse egress time (time of rising flux at the end of the eclipse) is the same     as the ingress time.
 
     b. We use the function with a subset of the cleaned (but unsmoothed) light curve, to fit one of the eclipses using ```scipy.optimize.curve_fit``` and     obtain the fit parameters described above. We plot the data and the model together on the same plot.
+
+Eclipse Fits
+
+![First (exo)planet](/images/period1.png)
+
+![Second (exo)planet](/images/period2.png)
