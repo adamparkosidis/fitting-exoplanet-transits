@@ -99,8 +99,8 @@ def eclipse_func(t,f_star, Dt_total, t_cent, Dt_in, d):
 
 path = os.getcwd() # get the path to working directory
 
-clean_data = data_cleaning(path+'/images/tess_lc1.dat')
-smoothed_flux =period_exoplanet(clean_data,path+'/images/tess_lc1.dat')
+clean_data = data_cleaning(path+'/data/tess_lc1.dat')
+smoothed_flux =period_exoplanet(clean_data,path+'/data/tess_lc1.dat')
 
 fit_param_1 , stat = curve_fit(eclipse_func,clean_data[:,0],clean_data[:,1], p0=[178230, 0.1, 0.61+1.333e3, 0.03, 90])
 fig = plt.figure()
@@ -111,11 +111,12 @@ plt.ylabel('Flux (electorns/sec)')
 plt.title('Fit of the Model on the Data')
 plt.legend(['Unsmoothed data','Model'])
 plt.grid() 
+plt.show()
 
 ### Second data sheet    
     
-clean_data = data_cleaning(path+'/images/tess_lc2.dat')
-smoothed_flux =period_exoplanet(clean_data,path+'/images/tess_lc2.dat')       
+clean_data = data_cleaning(path+'/data/tess_lc2.dat')
+smoothed_flux =period_exoplanet(clean_data,path+'/data/tess_lc2.dat')       
 
 fit_param_2 , stat = curve_fit(eclipse_func,clean_data[:,0],clean_data[:,1], p0=[135900, 0.28, 0.3+1.335e3, 0.05, 480])
 fig = plt.figure()
@@ -126,4 +127,4 @@ plt.ylabel('Flux (electorns/sec)')
 plt.title('Fit of the Model on the Data')
 plt.legend(['Unsmoothed data','Model'])
 plt.grid()
-     
+plt.show()
